@@ -1,3 +1,5 @@
+@import url(animations.css);
+
 /*Primary-Colors*/
 $soft-red: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
@@ -63,13 +65,17 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .bouncingArrow {
+        animation: shake-vertical 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    }
     
     header {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.5rem 2rem;
+        padding: 2rem;
         font-family: $Barlow;
         color: $white;
         font-size: 16px;
@@ -84,13 +90,19 @@ img {
             padding: 0.3rem;
         }
 
-        #cta {
+        #cta a {
             background-color: $white;
             color: $dark-desaturated-blue;
             border-radius: 4rem;
             text-transform: uppercase;
             font-family: $Fraunces;
-            padding: 15px;
+            padding: 15px 20px;
+            transition: all 0.2s ease;
+
+            &:hover {
+                color: $white;
+                background-color:  rgba(255, 255, 255, 0.3);
+            }
         }
     }
 
@@ -132,6 +144,32 @@ img {
                 font-family: $Fraunces;
                 font-weight: 900;
                 font-size: 0.9rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -6px;
+                    padding: 0;
+                    left: -8px;
+                    width: 30%;
+                    height: 9px;
+                    border-radius: 3em;
+                    background-color: aqua;
+                    transform: scaleX(0);
+                    transform-origin: left center;
+                    transition: all 0.3 ease-in-out;
+                }
+            }
+
+            .yellowHover:hover::before {
+                background-color: $yellow;
+                animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+
+            .redHover:hover::before {
+                background-color: $soft-red;
+                animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
         }
     }
@@ -241,11 +279,11 @@ img {
 
 .galleryRow {
     display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-    // display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
     height: 70vh;
 
     div {
@@ -296,9 +334,17 @@ footer {
         gap: 20px;
     }
 
+    a:hover {
+        color: $white;
+    }
+
     .attribution {
         font-size: 11px;
         text-align: center;
         padding: 20px 0 0 0;
+
+        a {
+            text-decoration: underline;
+        }
     }
 }

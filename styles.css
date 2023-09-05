@@ -1,3 +1,4 @@
+@import url(animations.css);
 /*Primary-Colors*/
 /*Neutral*/
 /*Fonts*/
@@ -45,12 +46,15 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.heroSection .bouncingArrow {
+  animation: shake-vertical 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
 .heroSection header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   font-family: "Barlow", sans-serif;
   color: hsl(0, 0%, 100%);
   font-size: 16px;
@@ -63,13 +67,18 @@ img {
 .heroSection header li {
   padding: 0.3rem;
 }
-.heroSection header #cta {
+.heroSection header #cta a {
   background-color: hsl(0, 0%, 100%);
   color: hsl(212, 27%, 19%);
   border-radius: 4rem;
   text-transform: uppercase;
   font-family: "Fraunces", serif;
-  padding: 15px;
+  padding: 15px 20px;
+  transition: all 0.2s ease;
+}
+.heroSection header #cta a:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .heroSection h1 {
   font-family: "Fraunces", serif;
@@ -106,6 +115,29 @@ img {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 0.9rem;
+  position: relative;
+}
+.highlightsSection .fullArticle .highlightInfo .learnMoreLink::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  padding: 0;
+  left: -8px;
+  width: 30%;
+  height: 9px;
+  border-radius: 3em;
+  background-color: aqua;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.3 ease-in-out;
+}
+.highlightsSection .fullArticle .highlightInfo .yellowHover:hover::before {
+  background-color: hsl(51, 100%, 49%);
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.highlightsSection .fullArticle .highlightInfo .redHover:hover::before {
+  background-color: hsl(7, 99%, 70%);
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .highlightsSection .halfArticle {
   width: 50%;
@@ -242,8 +274,14 @@ footer .socialMediaIcons {
   display: flex;
   gap: 20px;
 }
+footer a:hover {
+  color: hsl(0, 0%, 100%);
+}
 footer .attribution {
   font-size: 11px;
   text-align: center;
   padding: 20px 0 0 0;
+}
+footer .attribution a {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
