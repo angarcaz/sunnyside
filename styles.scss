@@ -1,0 +1,179 @@
+/*Primary-Colors*/
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-cyan: hsl(168, 34%, 41%);
+
+/*Neutral*/
+$dark-desaturated-blue: hsl(212, 27%, 19%);
+$dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+$Barlow: 'Barlow', sans-serif;
+$Fraunces: 'Fraunces', serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: $Barlow;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+  }
+
+
+/*Header*/ 
+.heroSection {
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        font-family: $Barlow;
+        color: $white;
+        font-size: 16px;
+
+        ul {
+            display: flex;
+            gap: 1.3rem;
+        }
+
+        li {
+            padding: 0.3rem;
+        }
+
+        #cta {
+            background-color: $white;
+            color: $dark-desaturated-blue;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            font-family: $Fraunces;
+        }
+    }
+
+    h1 {
+        font-family: $Fraunces;
+        text-transform: uppercase;
+        font-size: 50px;
+        padding: 60px 0 90px 0;
+        letter-spacing: 0.5rem;
+        color: $white;
+    }
+}
+
+.highlightsSection {
+    display: flex;
+    flex-wrap: wrap;
+
+    .fullArticle {
+        width: 100%;
+        display: flex;
+        height: 80vh;
+
+        .highlightInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 9em;
+
+            h2 {
+                font-family: $Fraunces;
+                font-size: 40px;
+            }
+
+            .learnMoreLink {
+                text-transform: uppercase;
+                font-family: $Fraunces;
+                font-weight: 900;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .halfArticle {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+            padding: 0 9rem 3rem 9rem;
+
+        }
+
+        h3 {
+            font-family: $Fraunces;
+            font-size: 26px;
+        }
+    }
+
+    #transformDiv {
+        background-image: url(images/desktop/image-transform.jpg);
+        width: 50%;
+        background-size: cover;
+    }
+
+    #standOutDiv {
+        background-image: url(images/desktop/image-stand-out.jpg);
+        width: 50%;
+        background-size: cover;
+    }
+
+    #graphicDesignDiv {
+        background-image: url(images/desktop/image-graphic-design.jpg);
+
+        background-size: cover;
+    }
+
+    #photographyDiv {
+        background-image: url(images/desktop/image-photography.jpg);
+        background-size: cover;
+    }
+
+}
