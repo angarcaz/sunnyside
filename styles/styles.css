@@ -38,7 +38,7 @@ img {
 
 /*Header*/
 .heroSection {
-  background-image: url(images/desktop/image-header.jpg);
+  background-image: url(../images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -158,21 +158,21 @@ img {
   font-size: 26px;
 }
 .highlightsSection #transformDiv {
-  background-image: url(images/desktop/image-transform.jpg);
+  background-image: url(../images/desktop/image-transform.jpg);
   width: 50%;
   background-size: cover;
 }
 .highlightsSection #standOutDiv {
-  background-image: url(images/desktop/image-stand-out.jpg);
+  background-image: url(../images/desktop/image-stand-out.jpg);
   width: 50%;
   background-size: cover;
 }
 .highlightsSection #graphicDesignDiv {
-  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-image: url(../images/desktop/image-graphic-design.jpg);
   background-size: cover;
 }
 .highlightsSection #photographyDiv {
-  background-image: url(images/desktop/image-photography.jpg);
+  background-image: url(../images/desktop/image-photography.jpg);
   background-size: cover;
 }
 
@@ -235,19 +235,19 @@ img {
   width: 100%;
 }
 .galleryRow #image01 {
-  background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+  background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
   background-size: cover;
 }
 .galleryRow #image02 {
-  background-image: url(images/desktop/image-gallery-orange.jpg);
+  background-image: url(../images/desktop/image-gallery-orange.jpg);
   background-size: cover;
 }
 .galleryRow #image03 {
-  background-image: url(images/desktop/image-gallery-cone.jpg);
+  background-image: url(../images/desktop/image-gallery-cone.jpg);
   background-size: cover;
 }
 .galleryRow #image04 {
-  background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+  background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
   background-size: cover;
 }
 
