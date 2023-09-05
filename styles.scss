@@ -4,6 +4,7 @@ $yellow: hsl(51, 100%, 49%);
 $desaturated-cyan: hsl(167, 40%, 24%);
 $dark-blue: hsl(198, 62%, 26%);
 $dark-cyan: hsl(168, 34%, 41%);
+$light-cyan: hsl(166.88deg 47.76% 73.73%);
 
 /*Neutral*/
 $dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -68,13 +69,14 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem;
+        padding: 1.5rem 2rem;
         font-family: $Barlow;
         color: $white;
         font-size: 16px;
 
         ul {
             display: flex;
+            align-items: center;
             gap: 1.3rem;
         }
 
@@ -85,9 +87,10 @@ img {
         #cta {
             background-color: $white;
             color: $dark-desaturated-blue;
-            border-radius: 1rem;
+            border-radius: 4rem;
             text-transform: uppercase;
             font-family: $Fraunces;
+            padding: 15px;
         }
     }
 
@@ -101,6 +104,8 @@ img {
     }
 }
 
+/*Highlights*/
+
 .highlightsSection {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +113,7 @@ img {
     .fullArticle {
         width: 100%;
         display: flex;
-        height: 80vh;
+        height: 85vh;
 
         .highlightInfo {
             width: 50%;
@@ -133,7 +138,7 @@ img {
 
     .halfArticle {
         width: 50%;
-        height: 80vh;
+        height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -176,4 +181,124 @@ img {
         background-size: cover;
     }
 
+}
+
+/*Client Testimonials*/
+
+.testimonialsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 9rem;
+
+    h2 {
+        font-family: $Fraunces;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 20px;
+        color: $grayish-blue;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            img {
+                max-width: 70px;
+                border-radius: 100%;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.3rem;
+
+                h4 {
+                    font-family: $Fraunces;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: $grayish-blue;
+                }
+            }
+        }
+    }
+}
+
+/*Gallery Row*/
+
+.galleryRow {
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    // display: flex;
+    height: 70vh;
+
+    div {
+        width: 100%;
+    }
+
+    #image01 {
+        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+        background-size: cover;
+    }
+    #image02 {
+        background-image: url(images/desktop/image-gallery-orange.jpg);
+        background-size: cover;
+    }
+    #image03 {
+        background-image: url(images/desktop/image-gallery-cone.jpg);
+        background-size: cover;
+    }
+    #image04 {
+        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+        background-size: cover;
+    }
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-cyan;
+    color: $dark-cyan;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 2.5rem 0;
+
+    img {
+        color: $dark-cyan;
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 4rem;
+    }
+
+    .socialMediaIcons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
 }

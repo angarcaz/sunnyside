@@ -3,18 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.scss">  
   <link rel="stylesheet" href="styles.css">  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
 </head>
 <body>
   <main>
@@ -69,35 +62,47 @@
         </div>
       </article>
     </section>
-    <section>
+    <section class="testimonialsSection">
       <h2>Client testimonials</h2>
       <div>
         <article>
-          <img src="" alt="Emily R." />
+          <img src="images/image-emily.jpg" alt="Emily R." />
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met 
             and deadlines were always hit.</p>
-          <h4>Emily R.</h4>
-          <p>Marketing Director</p>
+          <div>
+            <h4>Emily R.</h4>
+            <p>Marketing Director</p>
+          </div>
         </article>
         <article>
-          <img src="" alt="Thomas S." />
+          <img src="images/image-thomas.jpg" alt="Thomas S." />
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made 
             it a satisfying and enjoyable experience.</p>
-          <h4>Thomas S.</h4>
-          <p>Chief Operating Officer</p>
+          <div>
+            <h4>Thomas S.</h4>
+            <p>Chief Operating Officer</p>
+          </div>
         </article>
         <article>
-          <img src="" alt="Jennie F." />
+          <img src="images/image-jennie.jpg" alt="Jennie F." />
           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <h4>Jennie F.</h4>
-          <p>Business Owner</p>
+          <div>
+            <h4>Jennie F.</h4>
+            <p>Business Owner</p>
+          </div>
         </article>
       </div>
+    </section>
+    <section class="galleryRow">
+      <div id="image01"></div>
+      <div id="image02"></div>
+      <div id="image03"></div>
+      <div id="image04"></div>
     </section>
   </main>
   <footer>
     <div>
-      <img src="images/logo.svg" />
+      <img src="images/logo.svg" alt="sunnyside"/>
     </div>
     <nav>
       <ul>
@@ -106,17 +111,16 @@
         <li>Projects</li>
       </ul>
     </nav>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul class="socialMediaIcons">
+      <li><i class="fab fa-facebook-square"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-pinterest"></i></li>
     </ul>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/angarcaz">Ángela García</a>.
+    </div>
   </footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
