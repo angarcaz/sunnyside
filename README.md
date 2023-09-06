@@ -1,4 +1,4 @@
-# Frontend Mentor - Sunnyside agency landing page solution
+# Sunnyside agency landing page 
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). 
 
@@ -10,11 +10,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://angarcaz.github.io/sunnyside/)
+- Live Site URL: [Sunnyside Live!](https://angarcaz.github.io/sunnyside/)
 
 ## My process
 
@@ -45,5 +41,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [angarcaz](https://www.your-site.com)
-- Frontend Mentor 
+- [@angarcaz](https://github.com/angarcaz/)
+- [Frontend Mentor](https://www.frontendmentor.io/)
