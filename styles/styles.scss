@@ -142,6 +142,7 @@ img {
             h2 {
                 font-family: $Fraunces;
                 font-size: 40px;
+                color: $dark-desaturated-blue;
             }
 
             .learnMoreLink {
@@ -191,6 +192,7 @@ img {
         flex-direction: column;
         justify-content: flex-end;
         flex-wrap: wrap;
+        color: $dark-blue;
 
         div {
             display: flex;
@@ -388,6 +390,7 @@ footer {
             margin: 0 auto;
             padding: 3rem;
             font-size: 18px;
+            z-index: 9;
 
             li {
                 margin-top: 0.5rem;
@@ -418,6 +421,25 @@ footer {
         text-align: center;
         flex-basis: 100%;
         padding: 3em;
+
+        .learnMoreLink {
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -6px;
+                padding: 0;
+                left: 130px;
+                width: 30%;
+                height: 9px;
+                border-radius: 3em;
+                background-color: aqua;
+                transform: scaleX(0);
+                transform-origin: left center;
+                transition: all 0.3 ease-in-out;
+            }
+        }
+
     }
 
     #transformDiv {
