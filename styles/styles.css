@@ -59,6 +59,9 @@ img {
   color: hsl(0, 0%, 100%);
   font-size: 16px;
 }
+.heroSection header .burgerNav {
+  display: none;
+}
 .heroSection header ul {
   display: flex;
   align-items: center;
@@ -287,6 +290,29 @@ footer .attribution a {
 }
 
 @media (max-width: 600px) {
+  .heroSection header .burgerNav {
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .heroSection nav ul {
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    width: 90%;
+    transform: translateX(-130%);
+    margin: 0 auto;
+  }
+  .heroSection .open {
+    transform: translateX(0) !important;
+  }
+  .heroSection h1 {
+    text-align: center;
+  }
   .testimonialsSection {
     padding: 3rem;
     gap: 2rem;

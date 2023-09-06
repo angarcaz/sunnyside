@@ -80,6 +80,10 @@ img {
         color: $white;
         font-size: 16px;
 
+        .burgerNav {
+            display: none;
+        }
+
         ul {
             display: flex;
             align-items: center;
@@ -350,6 +354,38 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    .heroSection {
+        header {
+            .burgerNav {
+                cursor: pointer;
+                display: flex;
+                font-size: 1.5rem;
+            }
+        }
+
+        nav ul {
+            color: black;
+            background-color: $white;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 5rem;
+            width: 90%;
+            transform: translateX(-130%);
+            margin: 0 auto;
+        }
+
+        .open {
+            transform: translateX(0)!important;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    }
 
     .testimonialsSection {
         padding: 3rem;
