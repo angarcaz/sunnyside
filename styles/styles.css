@@ -295,6 +295,9 @@ footer .attribution a {
     display: flex;
     font-size: 1.5rem;
   }
+  .heroSection header .burgerNav span {
+    display: none;
+  }
   .heroSection nav ul {
     color: black;
     background-color: hsl(0, 0%, 100%);
@@ -303,9 +306,21 @@ footer .attribution a {
     left: 0;
     right: 0;
     top: 5rem;
-    width: 90%;
+    width: 85%;
     transform: translateX(-130%);
     margin: 0 auto;
+    padding: 3rem;
+    font-size: 18px;
+  }
+  .heroSection nav ul li {
+    margin-top: 0.5rem;
+  }
+  .heroSection nav ul #cta a {
+    background-color: hsl(51, 100%, 49%);
+  }
+  .heroSection nav ul #cta a:hover {
+    background-color: hsl(166.88, 47.76%, 73.73%);
+    color: hsl(198, 62%, 26%);
   }
   .heroSection .open {
     transform: translateX(0) !important;

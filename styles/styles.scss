@@ -361,6 +361,10 @@ footer {
                 cursor: pointer;
                 display: flex;
                 font-size: 1.5rem;
+
+                span {
+                    display: none;
+                }
             }
         }
 
@@ -372,13 +376,29 @@ footer {
             left: 0;
             right: 0;
             top: 5rem;
-            width: 90%;
+            width: 85%;
             transform: translateX(-130%);
             margin: 0 auto;
+            padding: 3rem;
+            font-size: 18px;
+
+            li {
+                margin-top: 0.5rem;
+            }
+
+            #cta a {
+                background-color: $yellow;
+
+                &:hover {
+                    background-color: $light-cyan;
+                    color: $dark-blue;
+                }
+            }
         }
 
         .open {
             transform: translateX(0)!important;
+            
         }
 
         h1 {
